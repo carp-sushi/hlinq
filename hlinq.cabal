@@ -1,0 +1,37 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.7.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hlinq
+version:        0.1.0.0
+author:         carp-sushi
+maintainer:     105142707+carp-sushi@users.noreply.github.com
+build-type:     Simple
+
+library
+  exposed-modules:
+      HLINQ
+  other-modules:
+      Paths_hlinq
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite hlinq-tests
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hlinq
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , hlinq
+    , tasty
+    , tasty-hspec
+  default-language: Haskell2010

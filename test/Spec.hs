@@ -36,7 +36,7 @@ selectActives table =
   runQuery $
     Query (select_ id) table (where_ bActive)
 
--- Testing join_ with where_
+-- Testing join_
 joinTables :: [RowA] -> [RowB] -> [(RowA, RowB)]
 joinTables a b =
   runQuery $

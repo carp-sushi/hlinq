@@ -19,5 +19,6 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - hlinq
+    - hspec
     - tasty
     - tasty-hspec
